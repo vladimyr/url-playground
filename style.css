@@ -51,6 +51,13 @@ html, body {
   color: #b71c1c;
 }
 
-a {
-  text-decoration: none;
+.inspector-json.expected [data-path] strong {
+  color: #808080;
+}
+
+.inspector-json.expected [data-path="this.origin"] span,
+.inspector-json.expected [data-path="this.protocol"] span,
+.inspector-json.expected [data-path="this.pathname"] span {
+  font-weight: bold;
+  color: #008000;
 }
