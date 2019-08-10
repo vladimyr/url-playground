@@ -1,0 +1,16 @@
+# deps
+node_modules/
+
+# editor
+.vscode
+*.sublime-*
+
+# build
+.cache
+dist
+
+# OS generated stuff
+.DS_Store
+.DS_Store?
+
+npm-debug.log

@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.inspector {
+  font-family: "Fira Mono", Consolas, "Andale Mono WT", "Andale Mono",
+    "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+    "Courier New", Courier, monospace;
+}
+
+.inspector-json {
+  padding: 0.375rem 1.5625rem;
+  font-family: inherit;
+}
+
+.inspector .code {
+  margin: 1.25rem 1.5625rem 0 1.5625rem;
+  padding: 0.25rem 0;
+  color: #1b1b1b;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+
+.inspector .code::before {
+  display: "block";
+  content: ">";
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.inspector-json li.object > a:before,
+.inspector-json li.array > a:before {
+  content: '[–]';
+  width: auto;
+  font-weight: bold;
+}
+
+.inspector-json li.collapsed > a:before {
+  content: '[+]';
+  width: auto;
+  font-weight: bold;
+}
+
+.inspector-json [data-path="this.origin"] span,
+.inspector-json [data-path="this.protocol"] span,
+.inspector-json [data-path="this.pathname"] span {
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+a {
+  text-decoration: none;
+}
