@@ -1,4 +1,9 @@
-'use strict';
+/**
+ * ## Useful links:
+ * - [Guidelines and Registration Procedures for URI Schemes](https://tools.ietf.org/html/rfc7595#section-3.2)
+ * - [Uniform Resource Identifier (URI): Generic Syntax](https://tools.ietf.org/html/rfc3986#section-3.2)
+ * - [Different results in parsing hostname/origin with custom uri schemes](https://github.com/jsdom/whatwg-url/issues/110)
+ */
 
 import html from 'nanohtml';
 import * as whatwg from 'whatwg-url';
