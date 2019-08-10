@@ -44,19 +44,38 @@ html, body {
   font-weight: bold;
 }
 
+.inspector-json [data-path] {
+  opacity: 0.35;
+}
+
+.inspector-json [data-path="this.href"],
+.inspector-json [data-path="this.origin"],
+.inspector-json [data-path="this.protocol"],
+.inspector-json [data-path="this.host"],
+.inspector-json [data-path="this.hostname"],
+.inspector-json [data-path="this.pathname"] {
+  opacity: 1;
+}
+
+.inspector-json [data-path="this.href"] span,
 .inspector-json [data-path="this.origin"] span,
 .inspector-json [data-path="this.protocol"] span,
+.inspector-json [data-path="this.host"] span,
+.inspector-json [data-path="this.hostname"] span,
 .inspector-json [data-path="this.pathname"] span {
   font-weight: bold;
-  color: #b71c1c;
+  color: #0f075a;
 }
 
 .inspector-json.expected [data-path] strong {
-  color: #808080;
+  color: #6d6d6d;
 }
 
+.inspector-json.expected [data-path="this.href"] span,
 .inspector-json.expected [data-path="this.origin"] span,
 .inspector-json.expected [data-path="this.protocol"] span,
+.inspector-json.expected [data-path="this.host"] span,
+.inspector-json.expected [data-path="this.hostname"] span,
 .inspector-json.expected [data-path="this.pathname"] span {
   font-weight: bold;
   color: #008000;
