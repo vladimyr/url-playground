@@ -31,6 +31,12 @@ html, body {
   font-weight: bold;
 }
 
+.inspector .code [contenteditable] {
+  padding: 0.1875rem;
+  color: #515151;;
+  border: 1px solid #515151;;
+}
+
 .inspector-json li.object > a:before,
 .inspector-json li.array > a:before {
   content: '[–]';

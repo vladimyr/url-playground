@@ -31,6 +31,7 @@
   "dependencies": {
     "Inspector-JSON": "sparkartgroup/Inspector-JSON#0.1.0",
     "nanohtml": "^1.6.3",
+    "throttle-debounce": "^2.1.0",
     "whatwg-url": "^7.0.0"
   },
   "devDependencies": {
