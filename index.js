@@ -54,7 +54,7 @@ function inspector({ url } = {}) {
   }
 }
 
-function dump({ value, config = { collapsed: false }, className = '' } = {}) {
+function dump({ value, config = {}, className = '' } = {}) {
   const element = html`
     <div class="object-dump ${className}"></div>
   `;
