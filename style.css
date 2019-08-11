@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -20,8 +24,8 @@ html, body {
   padding: 0.25rem 0;
   color: #1b1b1b;
   border-radius: 4px;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.875rem;
 }
 
 .inspector .code::before {
